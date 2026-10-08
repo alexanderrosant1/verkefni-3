@@ -1,0 +1,26 @@
+footer {
+  display: grid;
+  justify-content: center;
+  padding: var(--spacing-double);
+  text-align: center;
+  background-color: var(--color-accent);
+  border-top: var(--border) solid var(--color-border);
+}
+
+footer .content {
+  display: grid;
+  gap: var(--spacing-double);
+  justify-content: center;
+  width: 100%;
+  max-width: var(--footer-max-width);
+}
+
+footer ul {
+  list-style: none;
+}
+
+@media (width >= 700px) {
+  footer .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
