@@ -8,6 +8,7 @@
   display: grid;
   grid-template-rows: auto 1fr;
   gap: var(--spacing-double);
+
   width: 100%;
 }
 
@@ -22,13 +23,14 @@
 
 .card .image img {
   display: block;
+
   width: 100%;
   height: var(--card-image-height);
   object-fit: cover;
   object-position: 50% 50%;
 }
 
-@media (width >= 700px) {
+@media (min-width: 700px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
